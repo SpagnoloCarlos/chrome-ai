@@ -2,6 +2,7 @@ declare global {
   interface Window {
     Translator: Translator;
     LanguageDetector: Detector;
+    Summarizer: Summarizer;
   }
 }
 
@@ -29,4 +30,17 @@ interface DetectorInstance {
 interface DetectedLanguages {
   detectedLanguage: string;
   confidence: number;
+}
+
+interface Summarizer {
+  create(options: {
+    type: string;
+    length: string;
+    format: string;
+    sharedContext: string;
+  }): Promise<SummarizerInstance>;
+}
+
+interface SummarizerInstance {
+  summarize(text: string): Promise<string>;
 }
