@@ -18,7 +18,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <Chrome className="h-8 w-8 text-blue-600" />
             <div>
-              <h1 className="text-2xl font-bold text-foreground">Chrome 138</h1>
+              <h1 className="text-2xl font-bold text-foreground">Chrome AI</h1>
               <p className="text-sm text-muted-foreground">
                 Prueba las Nuevas Funciones de IA
               </p>
