@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# Chrome AI - Funciones Experimentales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web de demostración creada para explorar y probar las nuevas funciones de Inteligencia Artificial integradas directamente en el navegador Google Chrome (versión 138 y superiores).
 
-Currently, two official plugins are available:
+**Demo**: [https://chrome-ai.vercel.app/](https://chrome-ai.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características
 
-## Expanding the ESLint configuration
+Esta aplicación demuestra el poder de la API de IA de Chrome a través de tres herramientas principales:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **🌐 Traductor de Idiomas:** Traduce texto entre múltiples idiomas de forma instantánea.
+- **🔍 Detector de Idioma:** Identifica automáticamente el idioma de un texto.
+- **📝 Resumidor de Texto:** Genera resúmenes concisos de textos largos con diferentes estilos y longitudes.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Requisitos Previos
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Para utilizar esta aplicación y sus funcionalidades de IA, es **indispensable** contar con:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Google Chrome versión 138 o superior.**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Las funcionalidades de IA dependen de la API `window.Traductor`, `window.Detector` y `window.Summarizer` que solo está disponible en estas versiones del navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologías Utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **Lucide React** (para los iconos)
+
+## 🏃 Cómo ejecutar el proyecto localmente
+
+1.  Clona el repositorio:
+    ```bash
+    git clone https://github.com/SpagnoloCarlos/chrome-ai.git
+    ```
+2.  Navega a la carpeta del proyecto:
+    ```bash
+    cd chrome-ai
+    ```
+3.  Instala las dependencias:
+    ```bash
+    npm install
+    ```
+4.  Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+5.  Abre tu navegador (Chrome 138+) en `http://localhost:5173` (o el puerto que indique la consola).
+
+## 👨‍💻 Desarrollador
+
+Este proyecto fue desarrollado por **Carlos Andrés Spagnolo**.
+
+- **Sitio Web:** [spagnolo-carlos.netlify.app]("https//spagnolo-carlos.netlify.app")
+- **GitHub:** [@SpagnoloCarlos](https://github.com/SpagnoloCarlos)
+- **LinkedIn:** [Carlos Andres Spagnolo](https://www.linkedin.com/in/carlos-spagnolo-andres/)
