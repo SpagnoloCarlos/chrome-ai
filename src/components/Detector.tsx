@@ -89,7 +89,7 @@ const Detector = () => {
         </div>
 
         {detectionResult && (
-          <Card className="bg-green-50 border-green-200">
+          <Card className="bg-background border-green-800">
             <CardContent className="pt-6">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

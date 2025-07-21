@@ -157,7 +157,7 @@ const Summarizer = () => {
 
         {summaryResult && (
           <div className="space-y-2">
-            <Card className="bg-purple-50 border-purple-200">
+            <Card className="bg-background border-purple-800">
               <CardHeader>
                 <CardTitle className="text-purple-800">
                   Resumen generado
