@@ -53,6 +53,6 @@ Las funcionalidades de IA dependen de la API `window.Traductor`, `window.Detecto
 
 Este proyecto fue desarrollado por **Carlos Andrés Spagnolo**.
 
-- **Sitio Web:** [spagnolo-carlos.netlify.app]("https//spagnolo-carlos.netlify.app")
+- **Sitio Web:** [spagnolo-carlos.netlify.app](https://spagnolo-carlos.netlify.app/)
 - **GitHub:** [@SpagnoloCarlos](https://github.com/SpagnoloCarlos)
 - **LinkedIn:** [Carlos Andres Spagnolo](https://www.linkedin.com/in/carlos-spagnolo-andres/)
