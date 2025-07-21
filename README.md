@@ -2,7 +2,7 @@
 
 Una aplicación web de demostración creada para explorar y probar las nuevas funciones de Inteligencia Artificial integradas directamente en el navegador Google Chrome (versión 138 y superiores).
 
-**Demo**: [https://chrome-ai.vercel.app/](https://chrome-ai.vercel.app/)
+**Demo**: [https://chrome-ai-flame.vercel.app/](https://chrome-ai-flame.vercel.app/)
 
 ## ✨ Características
 
