@@ -79,7 +79,8 @@ const Traductor = () => {
             <SelectContent>
               {languages.map((lang) => (
                 <SelectItem key={lang.code} value={lang.code}>
-                  {lang.flag} {lang.name}
+                  <span className="hidden md:inline">{lang.flag}</span>{" "}
+                  {lang.name}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -96,7 +97,8 @@ const Traductor = () => {
             <SelectContent>
               {languages.map((lang) => (
                 <SelectItem key={lang.code} value={lang.code}>
-                  {lang.flag} {lang.name}
+                  <span className="hidden md:inline">{lang.flag}</span>{" "}
+                  {lang.name}
                 </SelectItem>
               ))}
             </SelectContent>

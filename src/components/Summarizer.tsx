@@ -158,24 +158,24 @@ const Summarizer = () => {
         {summaryResult && (
           <div className="space-y-2">
             <Card className="bg-background border-purple-800">
-              <CardHeader>
+              <CardHeader className="relative">
                 <CardTitle className="text-purple-800">
                   Resumen generado
                 </CardTitle>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="absolute top-0 right-8 bg-transparent"
+                  onClick={() => copyToClipboard(summaryResult)}
+                >
+                  <Copy className="h-4 w-4" />
+                </Button>
               </CardHeader>
               <CardContent>
-                <div className="relative">
+                <div>
                   <div className="whitespace-pre-wrap text-purple-900">
                     {summaryResult}
                   </div>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="absolute top-0 right-0 bg-transparent"
-                    onClick={() => copyToClipboard(summaryResult)}
-                  >
-                    <Copy className="h-4 w-4" />
-                  </Button>
                 </div>
               </CardContent>
             </Card>
