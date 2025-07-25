@@ -16,7 +16,8 @@ function App() {
         return;
       }
       const version = parseInt(chromeMatch[1], 10);
-      if (version >= 138) {
+      const enabledApis = typeof window?.Translator !== "undefined";
+      if (version >= 138 && enabledApis) {
         setAvailable(true);
       } else {
         setAvailable(false);

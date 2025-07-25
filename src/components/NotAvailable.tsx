@@ -6,8 +6,9 @@ const NotAvailable = () => {
       <Frown className="h-16 w-16 text-gray-500" />
       <h1 className="text-2xl font-bold mb-4">No disponible</h1>
       <p className="text-gray-600">
-        Es requerido el uso del navegador Google Chrome en su versión 138 o
-        superior.
+        Esta funcionalidad requiere Google Chrome versión 138 o superior en
+        escritorio. Actualmente, Chrome en dispositivos móviles no es
+        compatible.
       </p>
     </div>
   );
